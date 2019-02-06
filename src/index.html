@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport content=width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport content=width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Where in Nashville should I go?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Nashville Planner App</h1>
+<section id="flexbox">
+  <section id="searchSection">
+    <h3 class="headings">Search for stuff to do</h3>
+    <div id="searchInputs">
+      <input id="restSearch" type="text" name="restaurants"><br>
+      <input id="parksSearch" type="text" name="parks"><br>
+      <input id="eventsSearch" type="text" name="events"><br>
+    </div>
+    <div id="searchButtons">
+      <button class="Button">Search for events!</button>
+      <button class="Button">Search for food!</button>
+      <button class="Button">Search for parks!</button>
+    </div>
+  </section>
+  <section id="resultsSection">
+    <h3 class="headings">Here's what we found:</h3>
+    <div id="allResults">
+      <ul class="results">
+      <li class="resultsSingle">test</li>
+      <li class="resultsSingle">test</li>
+      <li class="resultsSingle">test</li>
+      <li class="resultsSingle">test</li>
+      </ul>
+    </div>
+    <div id ="saveButtons">
+      <button class="Button">Save this!</button>
+      <button class="Button">Save this!</button>
+      <button class="Button">Save this!</button>
+      <button class="Button">Save this!</button>
+    </div>
+  </section>
+</section>
+  <section id="itinerarySection">
+      <h3 class="headings">Your itinerary</h3>
+      <ul>
+        <li id= "savedRestuarants">test</li>
+        <li id= "savedParks">test</li>
+        <li id= "savedEvents">test</li>
+      </ul>
+    </section>
+
+  <script src="scripts/eventFetch.js"></script>
+  <script src="scripts/restFetch.js"></script>
+  <script src="scripts/parkFetch.js"></script>
+  <script src="scripts/eventListener.js"></script>
+  <script src="scripts/printTheseFiles.js"></script>
+
+</body>
+
 </html>

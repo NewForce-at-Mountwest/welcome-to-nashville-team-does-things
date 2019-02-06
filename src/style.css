@@ -1,0 +1,63 @@
+#searchSection{
+    display: flex;
+    border: 1px solid black;
+    width: 40vw;
+    margin-right:1rem;
+}
+
+#resultsSection{
+    display: flex;
+    border: 1px solid black;
+    width: 40vw;
+    margin-left:1rem;
+}
+
+#itinerarySection{
+    display: flex;
+    border: 1px solid black;
+    width: 45vw;
+}
+
+#searchInputs{
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;
+}
+
+#searchButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    align-items: center;   
+    width: 25%;
+}
+#itinerarySection{
+    display:flex;
+    margin-left:25%;
+    margin-top: 8%;
+    justify-content: center;
+}
+
+#allResults{
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;  
+}
+
+
+#saveButtons{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;  
+    align-items: center;
+    width: 25%;
+}
+
+#flexbox{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
+

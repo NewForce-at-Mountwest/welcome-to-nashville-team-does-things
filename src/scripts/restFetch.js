@@ -21,7 +21,7 @@ fetch("http://localhost:8088/restaurants")
         console.log(results)
         for(let i = 0; i < 4; i++){
             console.log(results[i].restaurant.name)
-        document.querySelector("#results").innerHTML += `<li>${results[i].restaurant.name}</li>`
+        document.querySelector("#results").innerHTML += `<li id ="results${i}">${results[i].restaurant.name}</li>`
         }
     });
 

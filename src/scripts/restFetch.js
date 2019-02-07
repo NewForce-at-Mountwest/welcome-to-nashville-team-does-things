@@ -19,14 +19,15 @@ fetch("http://localhost:8088/restaurants")
     .then(r => r.json())
     .then(results => {
         console.log(results)
-        results.forEach(singleRest => {
-                console.log(singleRest.restaurant.name)
-            })
-        });
+        for(let i = 0; i < 4; i++){
+            console.log(results[i].restaurant.name)
+        document.querySelector("#results").innerHTML += `<li>${results[i].restaurant.name}</li>`
+        }
+    });
 
    document.querySelector("#foodButton").addEventListener("click", () =>{
    const searchTerm= document.querySelector("#restSearch").value;
-   var searchResults = document.querySelectorAll(".resultsSingle")
+   var searchResults = document.querySelectorAll("#results")
    searchResults.innerHTML = getFood(searchTerm);
    })
 

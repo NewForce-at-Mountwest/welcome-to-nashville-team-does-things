@@ -8,4 +8,3 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parkInput}=Yes`, {
         document.querySelector("#results").innerHTML += `<li id="results${i}">${results[i].park_name}</li>`
     }
     })
-    

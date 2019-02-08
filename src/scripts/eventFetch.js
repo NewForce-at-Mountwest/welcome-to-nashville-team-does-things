@@ -6,5 +6,4 @@ fetch("https://www.eventbriteapi.com/v3/events/search/?q=nashville_coding&token=
 })
 .then(events => events.json())
 .then(results =>{
-    console.log(results)
-})
+    console.log(results)})

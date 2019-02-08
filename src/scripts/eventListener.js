@@ -1,7 +1,8 @@
 document.querySelector("#parkButton").addEventListener("click",() => {
   const searchTerm = document.querySelector("#parksSearch").value;
+  const formatedsearchPhrase = searchTerm.replace(" ","_")
   var parkResults = document.querySelectorAll("#results")
-  parkResults.innerHTML = getResults(searchTerm);
+  parkResults.innerHTML = getResults(formatedsearchPhrase);
 })
 document.querySelector("#Button0").addEventListener("click", () =>{
   const saveItin = document.querySelector("#results0").textContent;
@@ -19,3 +20,4 @@ document.querySelector("#Button3").addEventListener("click", () =>{
      const saveItin = document.querySelector("#results3").textContent;
      document.querySelector("#itinList").innerHTML =saveItin;
  })
+

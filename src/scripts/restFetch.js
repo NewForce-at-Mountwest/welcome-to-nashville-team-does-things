@@ -26,6 +26,7 @@ fetch("http://localhost:8088/restaurants")
     });
 
    document.querySelector("#foodButton").addEventListener("click", () =>{
+    document.querySelector("#results").innerHTML= "";
    const searchTerm= document.querySelector("#restSearch").value;
    var searchResults = document.querySelectorAll("#results")
    searchResults.innerHTML = getFood(searchTerm);
